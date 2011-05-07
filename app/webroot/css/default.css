@@ -196,54 +196,30 @@
     }
 
     /**
-            SHOP
+		SHOP
     **/
-        #shirts .shop-prev,
-        #shirts .shop-next {
-            background: #f09;
+		#shirts {
             position: absolute;
-            top: -25px;
-            height: 315px;
-            width: 50px;
-            overflow: hidden;
-            text-indent: -5000px;
-            z-index: 10;
+            top: 50%;
+
+            height: 3px;
+            width: 0;
+            overflow:hidden;
+
+            background: url(../img/site/misc/bg_content_24.png) repeat-x left top;
         }
-        #shirts .shop-prev {
-            left: 0;
+        #shirts.ready {
+            margin-top: -158px;
+            height: 316px;
+            width: 100%;
         }
-        #shirts .shop-next {
-            right: 0;
-        }
-        #shirts ul {
-            padding: 0;
-            margin: 0;
+        #shirts .inner {
+            margin: 25px 0 0;
+            height: 290px;
             position: relative;
-            overflow: hidden;
-            height: 100%;
+            z-index: 9;
         }
-
-        #shirts ul li {
-            display: block;
-            float: left;
-            padding: 0;
-            margin: 0 10px 0 0;
-            width: 240px;
-            height: 260px;
-
-            position: absolute;
-            right: -240px;
-        }
-		/*
-        #shirts ul {
-            width: 1000px;
-        }
-        #shirts ul li {
-            width: 240px;
-            height: 260px;
-        }
-       */
-
+	
 /**
 	OVERLAY
 **/

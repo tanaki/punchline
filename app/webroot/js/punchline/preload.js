@@ -30,17 +30,17 @@
 			},
 			all: function()
 			{
-                            $("#loading")
-                                .animate({"opacity" : 0}, function(){
-                                    $("#loading").remove();
+				$("#loading")
+					.animate({"opacity" : 0}, function(){
+						$("#loading").remove();
 
-                                        $("#wrapper")
-                                                .css("opacity", '0')
-                                                .removeClass("hidden")
-                                                .animate({"opacity" : 1}, 300, function(){
-                                                        $(window).trigger("preload_complete");
-                                                });
-                                });
+						$("#wrapper")
+							.css("opacity", '0')
+							.removeClass("hidden")
+							.animate({"opacity" : 1}, 300, function(){
+									$(window).trigger("preload_complete");
+							});
+					});
 			}
 		});
 	};

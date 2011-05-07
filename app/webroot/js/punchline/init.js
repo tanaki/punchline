@@ -21,12 +21,7 @@ function init(){
 function openComplete(){
     switch ( openPage ) {
         case "#shirts":
-			console.log("here");
-            $("#shirts").carousel();
-            //console.log($("#shirts ul").height());
-            //$("#shirts ul").jcarousel({
-            //
-            //});
+			$("#shirts").carousel();
             $("#shirts a.shirt").initModal();
         break;
         case "#coming-soon":

@@ -1,0 +1,44 @@
+html, body { margin:0; padding:0; }	
+/**
+	Carousel
+ **/
+ 
+	#shirts-carousel {
+		
+	}
+	
+	#shirts-carousel .carousel-list-container {
+		width: 1106px;
+		height:280px;
+		overflow:hidden;
+		margin:0 auto;
+	}
+	
+	#shirts-carousel ul {
+		list-style: none;
+		height:280px;
+		
+		margin:0;
+		padding:0;
+		position:relative;
+	}
+	
+	#shirts-carousel ul li {
+		position:absolute;
+		left:-275px;
+		
+		margin:0;
+		padding:0;
+	}
+	
+	#shirts-carousel .prev,
+	#shirts-carousel .next {
+		
+	}
+	#shirts-carousel .prev {
+		
+	}
+	#shirts-carousel .next {
+		
+	}
+	

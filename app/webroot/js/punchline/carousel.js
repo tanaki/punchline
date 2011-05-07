@@ -1,60 +1,104 @@
 (function( $ ){
-
+	
+	var current = 1,
+		max = null,
+		items = null,
+		offset = 0,
+		isAnimating = false,
+		numberItems = 4;
+	
 	var methods = {
 		init : function( options ) {
-
-			return this.each(function(){
-
-				var $this = $(this),
-					data = $this.data('carousel');
-
-				// If the plugin hasn't been initialized yet
-				if ( !data ) {
-					
-					var marginLeft = ($(window).width() - 1000) / 2;
-					$this.find("ul").css("width", $(window).width());
-					
-					$this.find("li").each(function(i, el){
-						if( i > 3) {
-							$(el).css("right", -250);
-						} else {
-							// $(el).animate({"left": (i * 250) + marginLeft}, 500);
-							$(el).animate({"right":  ((i * 250) + marginLeft )}, 500, function(){
-								if (i == 3) $(window).trigger('anim_teeshirt_over');
-							});
-						}
-					});
-					
-					$this.find(".shop-prev").click(function(){
-						
-						// TODO prev
-						return false;
-					});
-					
-					$this.find(".shop-next").click(function(){
-						
-						$this.find("li").each(function(i, el){
-							if( i < 4 ) {
-								$(el).animate({
-									"right" : $(window).width()
-								}, 500);
-								// "left" : -250
-							} else if( i > 3 && i < 8 ) {
-								$(el).animate({
-									"right" :  ((i - 4) * 250) + marginLeft
-								}, 500);
-								// "left" : ((i - 4) * 250) + marginLeft
-							}
-						});
-						
-						return false;
-					});
-					
-					$(this).data('carousel', {
-						target : $this
-					});
+			
+			items = $("#shirts-carousel ul li");
+			
+			methods._initList();
+			methods._initPos();
+			
+			$(".next").click(function(e){
+				e.preventDefault();
+				methods.next();
+			});
+			
+			$(".prev").click(function(e){
+				e.preventDefault();
+				methods.prev();
+			});
+			
+            $(window).keyup(function(e){
+                if(e.keyCode == 37) {
+                    methods.prev();
+                }
+                if(e.keyCode == 39) {
+                    methods.next();
+                }
+            });
+			
+		},
+		
+		resize : function() {
+			current = 1;
+			methods._initList();
+			methods._initPos();
+		},
+		
+		_initList : function() {
+			max = Math.ceil(items.length / numberItems);
+			$("#shirts-carousel .carousel-list-container").css("width", $(window).width());
+			
+			numberItems = Math.floor( $(window).width() / 275 );
+			if ( numberItems > 4 ) numberItems = 4;
+			
+			offset = Math.round(($(window).width() - (numberItems * 275)) / 2 );
+			if ( offset < 0 ) offset = 0;
+		},
+		
+		_initPos : function(){
+			items.each(function(i, el){
+				if ( i < 4 ) {
+					$(el).animate({
+						"left": i * 275 + offset
+					}, 400);
+				} else {
+					$(el).css("left", $(window).width());
 				}
 			});
+		},
+		
+		next : function(){
+			
+			if ( current == max || isAnimating ) return;
+			isAnimating = true;
+			for ( var i = (current - 1) * numberItems; i < current * numberItems; i++ ) {
+				methods._go(items[i], -275, null);
+			}
+			current++;
+			for ( var i = (current - 1) * numberItems; i < current * numberItems; i++ ) {
+				methods._go(items[i], (i - ((current - 1) * numberItems)) * 275 + offset, function(){
+					isAnimating = false;
+				});
+			}
+			
+		},
+		prev : function(){
+		
+			if ( current <= 1 || isAnimating ) return;
+			isAnimating = true;
+			
+			for ( var i = (current - 1) * numberItems; i < current * numberItems; i++ ) {
+				methods._go(items[i], $(window).width(), null);
+			}
+			current--;
+			for ( var i = (current - 1) * numberItems; i < current * numberItems; i++ ) {
+				methods._go(items[i], (i - ((current - 1) * numberItems)) * 275 + offset, function(){
+					isAnimating = false;
+				});
+			}
+		},
+		_go : function(target, left, callback){
+			$(target).animate({
+				"left": left
+			}, 600, "easeInOutSine", callback);
 		}
 	};
 

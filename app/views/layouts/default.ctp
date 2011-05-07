@@ -9,6 +9,7 @@
 
             echo $this->Html->css('reset');
             echo $this->Html->css('default');
+            echo $this->Html->css('carousel');
 
             echo $this->Html->script('lib/jquery.min');
             echo $this->Html->script('lib/jquery.plugins');
@@ -76,7 +77,11 @@
                 </div>
             </div>
             <div id="content">
-		<?php echo $content_for_layout; ?>
+				<div id="titles">
+					<img src="img/site/titles/title_teeshirts_24.png" alt="Tee Shirts" class="subtitle" />
+					<img src="img/site/titles/title_boutique_24.png" alt="Boutique" class="title" />
+				</div>
+				<?php echo $content_for_layout; ?>
             </div>
             <div id="footer">
                 <ul class="list-footer">
