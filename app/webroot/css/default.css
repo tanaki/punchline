@@ -1,0 +1,420 @@
+/**
+	GENERAL 
+**/
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        font-family: Helvetica,Arial,sans-serif;
+    }
+
+
+/**
+	WRAPPER
+**/
+    #wrapper,
+    .img-background {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #wrapper {
+        z-index: 2;
+
+        font-family: Helvetica, Arial, sans-seril;
+        background:url(../img/site/misc/bg_site.jpg) no-repeat center center;
+        background-size:cover;
+        -moz-background-size:cover;
+        -webkit-background-size:cover;
+        -o-background-size:cover;
+        -khtml-background-size:cover;
+    }
+    #wrapper.hidden,
+    .img-background.hidden {
+        display:none;
+    }
+    #modal {
+        display: none;
+    }
+
+/**
+	LOADER
+**/
+    #loading {
+        height: 100%;
+    }
+    #canvas-loading {
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin:-50px 0 0 -50px;
+    }
+
+/**
+	HEADER
+**/
+    #header {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        text-align: center;
+    }
+/**
+	TITLES
+**/
+    #titles {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 0;
+    }
+    #titles img {
+        position: absolute;
+        right: 100%;
+        display: block;
+    }
+    #titles img.title {
+        top: 50px;
+        right: -250%;
+    }
+
+/**
+	MENU
+**/
+    #menu {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #menu .current {
+        position: absolute;
+        cursor: default;
+        outline: none;
+    }
+    #menu .menu-1,
+    #menu .menu-2,
+    #menu .menu-3 {
+        position: absolute;
+    }
+    #menu .menu-1:hover,
+    #menu .menu-2:hover,
+    #menu .menu-3:hover {
+        top: 89%;
+    }
+
+    /* repeated for javascript use */
+    .menu-1 {
+        left: 25%;
+        top: 90%;
+        margin-left: -50px;
+    }
+    .menu-2 {
+        left: 50%;
+        top: 90%;
+        margin-left: -50px;
+    }
+    .menu-3 {
+        left: 75%;
+        top: 90%;
+        margin-left: -50px;
+    }
+    .current {
+        top: 0%;
+        left: 0%;
+        margin-left: 0px;
+    }
+
+/**
+	FOOTER
+**/
+    #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+
+        background: #000;
+        color: #fff;
+        opacity:0.7;
+        text-align: right;
+    }
+    #footer .list-footer {
+        list-style: none;
+        margin: 0;
+        padding: 0 0 5px 0;
+        height: 15px;
+    }
+    #footer .list-footer li {
+        display: inline;
+        margin: 0 10px 0 0;
+        padding: 0;
+
+        font-size: 11px;
+        line-height: 11px;
+        color: #b8b8b8;
+    }
+    #footer .list-footer li a {
+        color: #b8b8b8;
+        text-decoration: none;
+    }
+    #footer .list-footer li a:hover {
+        color: #fff;
+    }
+
+/**
+	CONTENU
+**/
+    #content {
+        
+    }
+    .main-content {
+        position: absolute;
+        top: 50%;
+
+        height: 3px;
+        width: 0;
+        overflow:hidden;
+
+        background: url(../img/site/misc/bg_content_24.png) repeat-x left top;
+    }
+    .main-content.ready {
+        margin-top: -158px;
+        height: 316px;
+        width: 100%;
+    }
+    .main-content .inner {
+        margin: 25px 0 0;
+        height: 290px;
+        position: relative;
+        z-index: 9;
+    }
+
+    /**
+            SHOP
+    **/
+        #shirts .shop-prev,
+        #shirts .shop-next {
+            background: #f09;
+            position: absolute;
+            top: -25px;
+            height: 315px;
+            width: 50px;
+            overflow: hidden;
+            text-indent: -5000px;
+            z-index: 10;
+        }
+        #shirts .shop-prev {
+            left: 0;
+        }
+        #shirts .shop-next {
+            right: 0;
+        }
+        #shirts ul {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        #shirts ul li {
+            display: block;
+            float: left;
+            padding: 0;
+            margin: 0 10px 0 0;
+            width: 240px;
+            height: 260px;
+
+            position: absolute;
+            right: -240px;
+        }
+		/*
+        #shirts ul {
+            width: 1000px;
+        }
+        #shirts ul li {
+            width: 240px;
+            height: 260px;
+        }
+       */
+
+/**
+	OVERLAY
+**/
+    #simplemodal-overlay {
+        background-color:#fff;
+    }
+    .simplemodal-close {
+        cursor: pointer;
+        display: block;
+        background:url(../img/site/misc/img_close_24.png) no-repeat left top;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 18px;
+        top: 18px;
+        z-index: 100;
+    }
+    #simplemodal-container {
+        height:540px;
+        width:770px;
+        color:#fff;
+        background-color:#9d9d9d;
+        border: 1px #d1d1d1 solid;
+        text-transform: uppercase;
+    }
+
+    #simplemodal-container .shirt-carousel-item {
+        display: block;
+        height:540px;
+        width:770px;
+    }
+
+    #simplemodal-container .left-modal {
+        display: block;
+        width: 540px;
+        height:540px;
+        float: left;
+        background: #fff;
+        overflow: hidden;
+    }
+    #simplemodal-container .left-modal img {
+        display: block;
+        margin: -90px 0 0 -25px;
+    }
+    #simplemodal-container .right-modal {
+        display: block;
+        float: left;
+        width: 230px;
+
+        position: relative;
+        z-index: 15;
+    }
+    #simplemodal-container .right-inner-modal {
+        display: block;
+        margin:120px 20px 25px 25px;
+    }
+
+    /**
+            OVERLAY Content
+    **/
+
+        #simplemodal-container img {
+            margin-bottom: 20px;
+            display: block;
+        }
+        #simplemodal-container .white {
+            color : #fff;
+        }
+        #simplemodal-container .grey {
+            color : #3c3c3c;
+        }
+
+        #simplemodal-container .price,
+        #simplemodal-container .color,
+        #simplemodal-container .reference,
+        #simplemodal-container .size {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+        #simplemodal-container .size .white {
+            display: block;
+        }
+
+        #simplemodal-container .color {
+            overflow: hidden;
+        }
+        #simplemodal-container .color .white {
+            display: block;
+            float: left;
+            margin: 2px 8px 0 0;
+        }
+        #simplemodal-container .color .color-preview {
+            display: block;
+            float: left;
+            width: 16px;
+            height: 16px;
+            margin-right: 3px;
+            border: 1px #7f7b7b solid;
+        }
+
+        #simplemodal-container .btn-buy {
+            display: block;
+            background: url(../img/site/misc/bg_btn-buy_24.png) no-repeat left top;
+            text-transform: none;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+            padding: 15px 0 0 20px;
+
+            height: 40px;
+            width: 172px;
+        }
+
+
+    /**
+        OVERLAY Carousel
+    **/
+
+        #simplemodal-container .jcarousel-prev,
+        #simplemodal-container .jcarousel-next {
+            display:block;
+            position:absolute;
+            width:35px;
+            height:35px;
+            bottom: 30px;
+            right: 180px;
+            cursor: pointer;
+            background: url(../img/site/misc/btn_pagin_24.png) no-repeat left top;
+            z-index: 20;
+        }
+        #simplemodal-container .jcarousel-next {
+            right: 20px;
+            background-position: right top;
+        }
+        #simplemodal-container .jcarousel-prev-disabled,
+        #simplemodal-container .jcarousel-next-disabled {
+            cursor:default;
+            opacity: 0.5;
+            -moz-opacity: 0.5;
+            -webkit-opacity: 0.5;
+            -o-opacity: 0.5;
+        }
+        .pagin-caption {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 230px;
+            height: 540px;
+            z-index: 10;
+
+            background: #9D9D9D;
+        }
+        .pagin-caption span {
+            display: block;
+            text-align: center;
+            text-transform: none;
+            font-size: 13px;
+            width:100%;
+
+            position: absolute;
+            bottom:43px;
+        }
+
+
+    /**
+        COMING SOON
+    **/
+        #coming-soon {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #666;
+        }

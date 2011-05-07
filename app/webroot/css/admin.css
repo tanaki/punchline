@@ -1,0 +1,37 @@
+
+/**
+ **  Header
+ **/
+	
+	#header {
+		background:#fff;
+		border-bottom:1px solid black;
+	}
+	
+	#header h1 {
+		background:#fff;
+		text-align:center;
+	}
+	
+/**
+ **  Content
+ **/
+	#content h2 {
+		font-weight:bold;
+		color:#666;
+	}
+
+/**
+ **  Table
+ **/
+	th.actions {
+		text-align:center;
+	}
+
+/**
+ **  Actions
+ **/	
+	.actions h3 {
+		color:#999;
+		font-size:20px;
+	}
