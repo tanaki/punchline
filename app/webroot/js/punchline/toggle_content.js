@@ -2,19 +2,46 @@
 
 	var methods = {
 		init : function( options ) {
-                    return this.each(function(){
-                        
-                        var data = $this.data('open');
-                        
-                        // If the plugin hasn't been initialized yet
-                        if ( !data ) {
-                            $(this).data('open', {
-                                target : $this
-                            });
-                        }
-                    });
+			return this.each(function(){
+				
+				var data = $this.data('open');
+				
+				// If the plugin hasn't been initialized yet
+				if ( !data ) {
+					$(this).data('open', {
+						target : $this
+					});
+				}
+			});
 		},
 		open : function(){
+			
+			var $this = $(this);
+			
+			$('.subtitle').animate({
+				'right' : 0
+				}, 500, function(){
+					$('.title').animate({
+						'right': 0
+					}, 500, function(){
+						$this
+							.animate({
+								'width': '100%'
+							}, 500)
+							.animate({
+								'margin-top' : -158,
+							}, 300)
+							.animate({
+								'height' : 316
+							}, 500, function(){
+								$(window).trigger('open_complete')
+							});
+					});
+				});
+			
+			
+			
+			/*
 			var $this = $(this);
 			$('.subtitle').animate({
 					'right' : '0%'
@@ -40,6 +67,7 @@
 						});
 					});
 				});
+			*/
 		},
 		close : function(){
 			var $this = $(this);

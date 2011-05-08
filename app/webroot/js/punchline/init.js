@@ -18,7 +18,7 @@ function init(){
     $(openPage).toggleContent('open');
 }
 
-function openComplete(){
+function openComplete() {
     switch ( openPage ) {
         case "#shirts":
 			$("#shirts").carousel();

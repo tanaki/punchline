@@ -5,7 +5,7 @@
 		$.imgpreload(aImages,
 		{
 			each: function()
-			{	
+			{
 				var angle = Math.ceil(((counter + 1) * (Math.PI * 2)) / aImages.length);
 				var canvas = $("#canvas-loading").get(0);
 				if (canvas.getContext) {
@@ -26,19 +26,18 @@
 					ctx.stroke();
 				}
 				counter++;
-				
 			},
 			all: function()
 			{
 				$("#loading")
-					.animate({"opacity" : 0}, function(){
+					.animate({"opacity" : 0}, 200, function(){
 						$("#loading").remove();
 
 						$("#wrapper")
-							.css("opacity", '0')
+							.css("opacity", 0)
 							.removeClass("hidden")
 							.animate({"opacity" : 1}, 300, function(){
-									$(window).trigger("preload_complete");
+								$(window).trigger("preload_complete");
 							});
 					});
 			}

@@ -10,8 +10,10 @@
             echo $this->Html->css('reset');
             echo $this->Html->css('default');
             echo $this->Html->css('carousel');
-
-            echo $this->Html->script('lib/jquery.min');
+	?>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.js"></script>
+	<?php
+            //echo $this->Html->script('lib/jquery.min');
             echo $this->Html->script('lib/jquery.plugins');
 	?>
 

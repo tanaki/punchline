@@ -43,6 +43,7 @@
 		},
 		
 		_initList : function() {
+			$(".prev").addClass("disabled");
 			max = Math.ceil(items.length / numberItems);
 			$("#shirts-carousel .carousel-list-container").css("width", $(window).width());
 			
@@ -68,6 +69,11 @@
 		next : function(){
 			
 			if ( current == max || isAnimating ) return;
+			
+			$(".prev").removeClass("disabled");
+			if ( current == max - 1 ) $(".next").addClass("disabled");
+			else $(".next").removeClass("disabled");
+			
 			isAnimating = true;
 			for ( var i = (current - 1) * numberItems; i < current * numberItems; i++ ) {
 				methods._go(items[i], -275, null);
@@ -81,10 +87,14 @@
 			
 		},
 		prev : function(){
-		
-			if ( current <= 1 || isAnimating ) return;
-			isAnimating = true;
 			
+			if ( current <= 1 || isAnimating ) return;
+		
+			$(".next").removeClass("disabled");
+			if ( current <= 2 ) $(".prev").addClass("disabled");
+			else $(".prev").removeClass("disabled");
+			
+			isAnimating = true;
 			for ( var i = (current - 1) * numberItems; i < current * numberItems; i++ ) {
 				methods._go(items[i], $(window).width(), null);
 			}

@@ -171,7 +171,9 @@
 	CONTENU
 **/
     #content {
-        
+        width:100%;
+        height:100%;
+		overflow:hidden;
     }
     .main-content {
         position: absolute;
@@ -206,7 +208,7 @@
             width: 0;
             overflow:hidden;
 
-            background: url(../img/site/misc/bg_content_24.png) repeat-x left top;
+            background: url(../img/site/misc/bg_content_24.png) repeat-x left 5px;
         }
         #shirts.ready {
             margin-top: -158px;
@@ -214,8 +216,8 @@
             width: 100%;
         }
         #shirts .inner {
-            margin: 25px 0 0;
-            height: 290px;
+            margin: 0;
+            height: 320px;
             position: relative;
             z-index: 9;
         }
