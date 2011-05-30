@@ -18,9 +18,9 @@
 	<tr<?php echo $class;?>>
 		<td><?php echo $color['Color']['id']; ?>&nbsp;</td>
 		<td><?php echo $color['Color']['name']; ?>&nbsp;</td>
-		<td><?php echo $color['Color']['hexa']; ?>&nbsp;</td>
+		<td><span class="color-preview" style="background-color:#<?php echo $color['Color']['hexa']; ?>;"></span><?php echo $color['Color']['hexa']; ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $color['Color']['id'])); ?>
+			<!--?php echo $this->Html->link(__('View', true), array('action' => 'view', $color['Color']['id'])); ?-->
 			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $color['Color']['id'])); ?>
 			<?php echo $this->Html->link(__('Delete', true), array('action' => 'delete', $color['Color']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $color['Color']['id'])); ?>
 		</td>

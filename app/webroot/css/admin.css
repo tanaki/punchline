@@ -1,16 +1,31 @@
 
 /**
+ **  General
+ **/
+	html, body {
+		height:100%;
+	}
+	body {
+		background:#ddd;
+	}
+
+/**
  **  Header
  **/
 	
 	#header {
-		background:#fff;
-		border-bottom:1px solid black;
+		background:none;
+		padding:0 20px;
 	}
 	
 	#header h1 {
-		background:#fff;
+		background:none;
 		text-align:center;
+	}
+	#header h1 a,
+	#header h1 a:hover {
+		background:none;
+		display:block;
 	}
 	
 /**
@@ -22,10 +37,63 @@
 	}
 
 /**
+ **  Admin Shirts
+ **/
+	.admin-shirt-grid {
+		overflow:hidden;
+	}
+	.admin-shirt {
+		display:block;
+		float:left;
+		width:300px;
+		min-height:420px;
+		background:#eee;
+		
+		margin:10px;
+		padding:10px;
+		text-align:center;
+	}
+	.admin-shirt-details {
+		text-align:left;
+	}
+	.admin-shirt-details strong {
+		display:block;
+		margin-top:10px;
+	}
+	.admin-shirt-actions {
+		text-align:center;
+		margin-top:30px;
+	}
+	.admin-shirt-actions a {		
+		font-weight:normal;
+		padding: 4px 8px;
+		background:#e6e49f;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f1f1d4), to(#e6e49f));
+		background-image: -moz-linear-gradient(top, #f1f1d4, #e6e49f);
+		color:#333;
+		border:1px solid #aaac62;
+		-webkit-border-radius:8px;
+		-moz-border-radius:8px;
+		border-radius:8px;
+		text-decoration:none;
+		text-shadow: #fff 0px 1px 0px;
+		min-width: 0;
+	}
+	
+	
+/**
  **  Table
  **/
 	th.actions {
 		text-align:center;
+	}
+	.color-preview {
+		display:block;
+		float:left;
+		width:16px;
+		height:16px;
+		border:1px solid #000;
+		margin-right:10px;
 	}
 
 /**

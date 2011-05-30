@@ -45,15 +45,32 @@
 		overflow:hidden;
 		
 		outline:none;
+		background:url(../img/site/misc/sprite_carousel-arrows_24.png) no-repeat 30px 140px;
+		
 	}
 	#shirts-carousel .prev {
 		left:0;
 	}
 	#shirts-carousel .next {
 		right:0;
+		background-position:-1050px 140px;
 	}
+	
+	#shirts-carousel .prev:hover {
+		background-position:25px 140px;
+	}
+	#shirts-carousel .next:hover {
+		background-position:-1045px 140px;
+	}
+	
 	#shirts-carousel .disabled {
-		opacity:0.5;
+		opacity:0.3;
 		cursor:default;
+	}
+	#shirts-carousel .prev.disabled:hover {
+		background-position:30px 140px;
+	}
+	#shirts-carousel .next.disabled:hover {
+		background-position:-1050px 140px;
 	}
 	

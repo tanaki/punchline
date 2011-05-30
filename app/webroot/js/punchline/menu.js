@@ -7,8 +7,8 @@
             var largeImg = $(target).data('img-large');
             var smallImg = $('.current').data('img-small');
 
-            isAnimating = true
-
+            isAnimating = true;
+			
             $('.current img').fadeOut(200, function(){
                 $(this).attr('src', smallImg).fadeIn(200);
             });
@@ -18,7 +18,6 @@
                     .addClass(tClass)
                     .attr('style', '');
             });
-
             $('img', target).fadeOut(200, function(){
                 $(this).attr('src', largeImg).fadeIn(200);
             });
@@ -28,21 +27,23 @@
                     .addClass('current')
                     .attr('style', '');
                 isAnimating = false;
+				
+                $(openPage).toggleContent('close');
+                openPage = $(this).attr('href');
             });
 	};
 
 	$.fn.menu = function() {
             var self = this;
-            $('#menu a').click(function(){
-                var targetClass = $(this).attr('class');
-                if(targetClass == 'current' || isAnimating || !isOpen) return false;
+            $('#menu a').click(function(e){
+				
+				e.preventDefault();
+				var targetClass = $(this).attr('class');
+				
+				if(targetClass == 'current' || isAnimating || !isOpen) return;
 
                 // animation
                 _animate(this, targetClass);
-                
-                $(openPage).toggleContent('close');
-                openPage = $(this).attr('href');
-                return false;
             });
 	};
 

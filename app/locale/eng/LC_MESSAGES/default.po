@@ -1,0 +1,512 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2011-05-30 11:50+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: \controllers\categories_controller.php:15;39;15;39
+msgid "Invalid category"
+msgstr ""
+
+#: \controllers\categories_controller.php:26;44;26;44
+msgid "The category has been saved"
+msgstr ""
+
+#: \controllers\categories_controller.php:29;47;29;47
+msgid "The category could not be saved. Please, try again."
+msgstr ""
+
+#: \controllers\categories_controller.php:60;60
+msgid "Invalid id for category"
+msgstr ""
+
+#: \controllers\categories_controller.php:64;64
+msgid "Category deleted"
+msgstr ""
+
+#: \controllers\categories_controller.php:67;67
+msgid "Category was not deleted"
+msgstr ""
+
+#: \controllers\colors_controller.php:15;39;15;39
+msgid "Invalid color"
+msgstr "Couleur invalide."
+
+#: \controllers\colors_controller.php:26;44;26;44
+msgid "The color has been saved"
+msgstr "La couleur a bien été enregistrée."
+
+#: \controllers\colors_controller.php:29;47;29;47
+msgid "The color could not be saved. Please, try again."
+msgstr "La couleur n'a pas pu être enregistrée. Veuillez réessayer."
+
+#: \controllers\colors_controller.php:60;60
+msgid "Invalid id for color"
+msgstr "ID invalide pour la couleur"
+
+#: \controllers\colors_controller.php:64;64
+msgid "Color deleted"
+msgstr "La couleur a bien été supprimée."
+
+#: \controllers\colors_controller.php:67;67
+msgid "Color was not deleted"
+msgstr "La couleur n'a pas été supprimée."
+
+#: \controllers\shirts_controller.php:22;48;22;48
+msgid "Invalid shirt"
+msgstr "Tee-shirt invalide."
+
+#: \controllers\shirts_controller.php:33;53;33;53
+msgid "The shirt has been saved"
+msgstr "Le tee-shirt a bien été enregistré."
+
+#: \controllers\shirts_controller.php:36;56;36;56
+msgid "The shirt could not be saved. Please, try again."
+msgstr "Le tee-shirt n'a pas été enregistré. Veuillez réessayer."
+
+#: \controllers\shirts_controller.php:71;71
+msgid "Invalid id for shirt"
+msgstr "ID invalide pour le tee-shirt."
+
+#: \controllers\shirts_controller.php:75;75
+msgid "Shirt deleted"
+msgstr "Le tee-shirt a bien été supprimé."
+
+#: \controllers\shirts_controller.php:78;78
+msgid "Shirt was not deleted"
+msgstr "Le tee-shirt n'a pas été supprimé."
+
+#: \controllers\sizes_controller.php:15;39;15;39
+msgid "Invalid size"
+msgstr "Taille invalide."
+
+#: \controllers\sizes_controller.php:26;44;26;44
+msgid "The size has been saved"
+msgstr "La taille a bien été enregistrée."
+
+#: \controllers\sizes_controller.php:29;47;29;47
+msgid "The size could not be saved. Please, try again."
+msgstr "La taille n'a pas pu être enregistrée. Veuillez réessayer."
+
+#: \controllers\sizes_controller.php:60;60
+msgid "Invalid id for size"
+msgstr "ID invalide pour la taille."
+
+#: \controllers\sizes_controller.php:64;64
+msgid "Size deleted"
+msgstr "La taille a bien été supprimée."
+
+#: \controllers\sizes_controller.php:67;67
+msgid "Size was not deleted"
+msgstr "La taille n'a pas été supprimée."
+
+#: \views\categories\admin_add.ctp:4;4
+msgid "Admin Add Category"
+msgstr ""
+
+#: \views\categories\admin_add.ctp:10;10
+#: \views\categories\admin_edit.ctp:11;11
+#: \views\colors\admin_add.ctp:11;11
+#: \views\colors\admin_edit.ctp:12;12
+#: \views\shirts\admin_add.ctp:17;17
+#: \views\shirts\admin_edit.ctp:18;18
+#: \views\sizes\admin_add.ctp:10;10
+#: \views\sizes\admin_edit.ctp:11;11
+msgid "Submit"
+msgstr "Enregistrer"
+
+#: \views\categories\admin_add.ctp:13;13
+#: \views\categories\admin_edit.ctp:14;14
+#: \views\categories\admin_index.ctp:7;43;7;43
+#: \views\categories\admin_view.ctp:17;39;17;39
+#: \views\colors\admin_add.ctp:14;14
+#: \views\colors\admin_edit.ctp:15;15
+#: \views\colors\admin_index.ctp:8;45;8;45
+#: \views\colors\admin_view.ctp:22;44;22;44
+#: \views\shirts\admin_add.ctp:20;20
+#: \views\shirts\admin_edit.ctp:21;21
+#: \views\shirts\admin_index.ctp:46;46
+#: \views\shirts\admin_view.ctp:42;63;100;137;42;63;100;137
+#: \views\shirts\view.ctp:47;68;105;142;47;68;105;142
+#: \views\sizes\admin_add.ctp:13;13
+#: \views\sizes\admin_edit.ctp:14;14
+#: \views\sizes\admin_index.ctp:7;43;7;43
+#: \views\sizes\admin_view.ctp:17;39;17;39
+msgid "Actions"
+msgstr ""
+
+#: \views\categories\admin_add.ctp:16;16
+#: \views\categories\admin_edit.ctp:18;18
+#: \views\categories\admin_view.ctp:21;21
+#: \views\shirts\admin_add.ctp:24;24
+#: \views\shirts\admin_edit.ctp:25;25
+#: \views\shirts\admin_index.ctp:49;49
+#: \views\shirts\admin_view.ctp:48;48
+#: \views\shirts\view.ctp:53;53
+msgid "List Categories"
+msgstr "Voir toutes les catégories"
+
+#: \views\categories\admin_add.ctp:17;17
+#: \views\categories\admin_edit.ctp:19;19
+#: \views\categories\admin_index.ctp:46;46
+#: \views\categories\admin_view.ctp:23;23
+#: \views\colors\admin_add.ctp:18;18
+#: \views\colors\admin_edit.ctp:20;20
+#: \views\colors\admin_index.ctp:48;48
+#: \views\colors\admin_view.ctp:28;28
+#: \views\shirts\admin_add.ctp:23;23
+#: \views\shirts\admin_edit.ctp:24;24
+#: \views\shirts\admin_view.ctp:46;46
+#: \views\shirts\view.ctp:51;51
+#: \views\sizes\admin_add.ctp:17;17
+#: \views\sizes\admin_edit.ctp:19;19
+#: \views\sizes\admin_index.ctp:46;46
+#: \views\sizes\admin_view.ctp:23;23
+msgid "List Shirts"
+msgstr "Voir tous les tee-shirts"
+
+#: \views\categories\admin_add.ctp:18;18
+#: \views\categories\admin_edit.ctp:20;20
+#: \views\categories\admin_index.ctp:47;47
+#: \views\categories\admin_view.ctp:24;69;24;69
+#: \views\colors\admin_add.ctp:19;19
+#: \views\colors\admin_edit.ctp:21;21
+#: \views\colors\admin_index.ctp:49;49
+#: \views\colors\admin_view.ctp:29;74;29;74
+#: \views\shirts\admin_index.ctp:48;48
+#: \views\shirts\admin_view.ctp:47;47
+#: \views\shirts\view.ctp:52;52
+#: \views\sizes\admin_add.ctp:18;18
+#: \views\sizes\admin_edit.ctp:20;20
+#: \views\sizes\admin_index.ctp:47;47
+#: \views\sizes\admin_view.ctp:24;69;24;69
+msgid "New Shirt"
+msgstr "Ajouter un tee-shirt"
+
+#: \views\categories\admin_edit.ctp:4;4
+msgid "Admin Edit Category"
+msgstr "Editer la catégorie"
+
+#: \views\categories\admin_edit.ctp:17;17
+#: \views\categories\admin_index.ctp:23;23
+#: \views\categories\admin_view.ctp:60;60
+#: \views\colors\admin_edit.ctp:18;18
+#: \views\colors\admin_index.ctp:25;25
+#: \views\colors\admin_view.ctp:65;65
+#: \views\shirts\admin_edit.ctp:23;23
+#: \views\shirts\admin_index.ctp:23;23
+#: \views\shirts\admin_view.ctp:79;117;153;79;117;153
+#: \views\shirts\view.ctp:84;122;158;84;122;158
+#: \views\sizes\admin_edit.ctp:17;17
+#: \views\sizes\admin_index.ctp:23;23
+#: \views\sizes\admin_view.ctp:60;60
+msgid "Delete"
+msgstr "Supprimer"
+
+#: \views\categories\admin_edit.ctp:17;17
+#: \views\categories\admin_index.ctp:23;23
+#: \views\categories\admin_view.ctp:20;60;20;60
+#: \views\colors\admin_edit.ctp:18;18
+#: \views\colors\admin_index.ctp:25;25
+#: \views\colors\admin_view.ctp:25;65;25;65
+#: \views\shirts\admin_edit.ctp:23;23
+#: \views\shirts\admin_index.ctp:23;23
+#: \views\shirts\admin_view.ctp:45;79;117;153;45;79;117;153
+#: \views\shirts\view.ctp:50;84;122;158;50;84;122;158
+#: \views\sizes\admin_edit.ctp:17;17
+#: \views\sizes\admin_index.ctp:23;23
+#: \views\sizes\admin_view.ctp:20;60;20;60
+msgid "Are you sure you want to delete # %s?"
+msgstr "Etes vous sûr de vouloir supprimer ?"
+
+#: \views\categories\admin_index.ctp:2;2
+msgid "Categories"
+msgstr "Catégories"
+
+#: \views\categories\admin_index.ctp:21;21
+#: \views\categories\admin_view.ctp:58;58
+#: \views\colors\admin_view.ctp:63;63
+#: \views\shirts\admin_view.ctp:77;115;151;77;115;151
+#: \views\shirts\view.ctp:82;120;156;82;120;156
+#: \views\sizes\admin_index.ctp:21;21
+#: \views\sizes\admin_view.ctp:58;58
+msgid "View"
+msgstr "Voir"
+
+#: \views\categories\admin_index.ctp:22;22
+#: \views\categories\admin_view.ctp:59;59
+#: \views\colors\admin_index.ctp:24;24
+#: \views\colors\admin_view.ctp:64;64
+#: \views\shirts\admin_index.ctp:22;22
+#: \views\shirts\admin_view.ctp:78;116;152;78;116;152
+#: \views\shirts\view.ctp:83;121;157;83;121;157
+#: \views\sizes\admin_index.ctp:22;22
+#: \views\sizes\admin_view.ctp:59;59
+msgid "Edit"
+msgstr "Editer"
+
+#: \views\categories\admin_index.ctp:31;31
+#: \views\colors\admin_index.ctp:33;33
+#: \views\shirts\admin_index.ctp:34;34
+#: \views\sizes\admin_index.ctp:31;31
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr "Page %page%/%pages%, montrant %current% enregistrements sur %count%, à partir de %start% jusqu'à %end%"
+
+#: \views\categories\admin_index.ctp:36;36
+#: \views\colors\admin_index.ctp:38;38
+#: \views\shirts\admin_index.ctp:39;39
+#: \views\sizes\admin_index.ctp:36;36
+msgid "previous"
+msgstr "précédent"
+
+#: \views\categories\admin_index.ctp:39;39
+#: \views\colors\admin_index.ctp:41;41
+#: \views\shirts\admin_index.ctp:42;42
+#: \views\sizes\admin_index.ctp:39;39
+msgid "next"
+msgstr "suivant"
+
+#: \views\categories\admin_index.ctp:45;45
+#: \views\categories\admin_view.ctp:22;22
+#: \views\shirts\admin_add.ctp:25;25
+#: \views\shirts\admin_edit.ctp:26;26
+#: \views\shirts\admin_index.ctp:50;50
+#: \views\shirts\admin_view.ctp:49;88;49;88
+#: \views\shirts\view.ctp:54;93;54;93
+msgid "New Category"
+msgstr "Ajouter une categorie"
+
+#: \views\categories\admin_view.ctp:2;2
+msgid "Category"
+msgstr "Categorie"
+
+#: \views\categories\admin_view.ctp:4;32;4;32
+#: \views\colors\admin_view.ctp:4;37;4;37
+#: \views\shirts\admin_view.ctp:4;61;97;135;4;61;97;135
+#: \views\shirts\view.ctp:4;66;102;140;4;66;102;140
+#: \views\sizes\admin_view.ctp:4;32;4;32
+msgid "Id"
+msgstr ""
+
+#: \views\categories\admin_view.ctp:9;33;9;33
+#: \views\colors\admin_view.ctp:9;38;9;38
+#: \views\shirts\admin_view.ctp:9;62;98;136;9;62;98;136
+#: \views\shirts\view.ctp:9;67;103;141;9;67;103;141
+#: \views\sizes\admin_view.ctp:9;33;9;33
+msgid "Name"
+msgstr "Nom"
+
+#: \views\categories\admin_view.ctp:19;19
+msgid "Edit Category"
+msgstr ""
+
+#: \views\categories\admin_view.ctp:20;20
+msgid "Delete Category"
+msgstr ""
+
+#: \views\categories\admin_view.ctp:28;28
+#: \views\colors\admin_view.ctp:33;33
+#: \views\sizes\admin_view.ctp:28;28
+msgid "Related Shirts"
+msgstr ""
+
+#: \views\categories\admin_view.ctp:34;34
+#: \views\colors\admin_view.ctp:39;39
+#: \views\shirts\admin_view.ctp:14;14
+#: \views\shirts\view.ctp:19;19
+#: \views\sizes\admin_view.ctp:34;34
+msgid "Image"
+msgstr ""
+
+#: \views\categories\admin_view.ctp:35;35
+#: \views\colors\admin_view.ctp:40;40
+#: \views\shirts\admin_view.ctp:19;19
+#: \views\shirts\view.ctp:24;24
+#: \views\sizes\admin_view.ctp:35;35
+msgid "Url"
+msgstr "Lien"
+
+#: \views\categories\admin_view.ctp:36;36
+#: \views\colors\admin_view.ctp:41;41
+#: \views\shirts\admin_view.ctp:24;24
+#: \views\shirts\view.ctp:29;29
+#: \views\sizes\admin_view.ctp:36;36
+msgid "Price"
+msgstr "Prix"
+
+#: \views\categories\admin_view.ctp:37;37
+#: \views\colors\admin_view.ctp:42;42
+#: \views\shirts\admin_view.ctp:29;29
+#: \views\shirts\view.ctp:34;34
+#: \views\sizes\admin_view.ctp:37;37
+msgid "Reference"
+msgstr ""
+
+#: \views\categories\admin_view.ctp:38;38
+#: \views\colors\admin_view.ctp:43;43
+#: \views\shirts\admin_view.ctp:34;34
+#: \views\shirts\view.ctp:39;39
+#: \views\sizes\admin_view.ctp:38;38
+msgid "Description"
+msgstr ""
+
+#: \views\colors\admin_add.ctp:4;4
+msgid "Admin Add Color"
+msgstr "Ajouter une couleur"
+
+#: \views\colors\admin_add.ctp:17;17
+#: \views\colors\admin_edit.ctp:19;19
+#: \views\colors\admin_view.ctp:26;26
+#: \views\shirts\admin_add.ctp:26;26
+#: \views\shirts\admin_edit.ctp:27;27
+#: \views\shirts\admin_index.ctp:51;51
+#: \views\shirts\admin_view.ctp:50;50
+#: \views\shirts\view.ctp:55;55
+msgid "List Colors"
+msgstr "Voir toutes les couleurs"
+
+#: \views\colors\admin_edit.ctp:4;4
+msgid "Admin Edit Color"
+msgstr "Editer la couleur"
+
+#: \views\colors\admin_index.ctp:2;2
+msgid "Colors"
+msgstr "Couleurs"
+
+#: \views\colors\admin_index.ctp:47;47
+#: \views\colors\admin_view.ctp:27;27
+#: \views\shirts\admin_add.ctp:27;27
+#: \views\shirts\admin_edit.ctp:28;28
+#: \views\shirts\admin_index.ctp:52;52
+#: \views\shirts\admin_view.ctp:51;126;51;126
+#: \views\shirts\view.ctp:56;131;56;131
+msgid "New Color"
+msgstr "Ajouter une couleur"
+
+#: \views\colors\admin_view.ctp:2;2
+msgid "Color"
+msgstr "Couleur"
+
+#: \views\colors\admin_view.ctp:14;14
+#: \views\shirts\admin_view.ctp:99;99
+#: \views\shirts\view.ctp:104;104
+msgid "Hexa"
+msgstr "Code Hexadecimal"
+
+#: \views\colors\admin_view.ctp:24;24
+msgid "Edit Color"
+msgstr "Editer la couleur"
+
+#: \views\colors\admin_view.ctp:25;25
+msgid "Delete Color"
+msgstr "Supprimer la couleur"
+
+#: \views\layouts\admin.ctp:31;31
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: \views\shirts\admin_add.ctp:4;4
+msgid "Admin Add Shirt"
+msgstr "Ajouter un tee-shirt"
+
+#: \views\shirts\admin_add.ctp:28;28
+#: \views\shirts\admin_edit.ctp:29;29
+#: \views\shirts\admin_index.ctp:53;53
+#: \views\shirts\admin_view.ctp:52;52
+#: \views\shirts\view.ctp:57;57
+#: \views\sizes\admin_add.ctp:16;16
+#: \views\sizes\admin_edit.ctp:18;18
+#: \views\sizes\admin_view.ctp:21;21
+msgid "List Sizes"
+msgstr "Voir toutes les tailles"
+
+#: \views\shirts\admin_add.ctp:29;29
+#: \views\shirts\admin_edit.ctp:30;30
+#: \views\shirts\admin_index.ctp:54;54
+#: \views\shirts\admin_view.ctp:53;162;53;162
+#: \views\shirts\view.ctp:58;167;58;167
+#: \views\sizes\admin_index.ctp:45;45
+#: \views\sizes\admin_view.ctp:22;22
+msgid "New Size"
+msgstr "Ajouter une taille"
+
+#: \views\shirts\admin_edit.ctp:4;4
+msgid "Admin Edit Shirt"
+msgstr "Editer le tee-shirt"
+
+#: \views\shirts\admin_index.ctp:2;2
+msgid "Shirts"
+msgstr "Tee-shirts"
+
+#: \views\shirts\admin_view.ctp:2;2
+#: \views\shirts\view.ctp:2;2
+msgid "Shirt"
+msgstr "Tee-shirt"
+
+#: \views\shirts\admin_view.ctp:44;44
+#: \views\shirts\view.ctp:49;49
+msgid "Edit Shirt"
+msgstr "Editer le tee-shirt"
+
+#: \views\shirts\admin_view.ctp:45;45
+#: \views\shirts\view.ctp:50;50
+msgid "Delete Shirt"
+msgstr "Supprimer le tee-shirt"
+
+#: \views\shirts\admin_view.ctp:57;57
+#: \views\shirts\view.ctp:62;62
+msgid "Related Categories"
+msgstr "Catégories disponibles"
+
+#: \views\shirts\admin_view.ctp:93;93
+#: \views\shirts\view.ctp:98;98
+msgid "Related Colors"
+msgstr "Couleurs disponibles"
+
+#: \views\shirts\admin_view.ctp:131;131
+#: \views\shirts\view.ctp:136;136
+msgid "Related Sizes"
+msgstr "Tailles disponibles"
+
+#: \views\shirts\view.ctp:14;14
+msgid "Title Image"
+msgstr "Titre de l'image"
+
+#: \views\sizes\admin_add.ctp:4;4
+msgid "Admin Add Size"
+msgstr "Ajouter une taille"
+
+#: \views\sizes\admin_edit.ctp:4;4
+msgid "Admin Edit Size"
+msgstr "Editer la taille"
+
+#: \views\sizes\admin_index.ctp:2;2
+msgid "Sizes"
+msgstr "Tailles"
+
+#: \views\sizes\admin_view.ctp:2;2
+msgid "Size"
+msgstr "Taille"
+
+#: \views\sizes\admin_view.ctp:19;19
+msgid "Edit Size"
+msgstr "Editer la taille"
+
+#: \views\sizes\admin_view.ctp:20;20
+msgid "Delete Size"
+msgstr "Supprimer la taille"
+
+#: \webroot\test.php:88;88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

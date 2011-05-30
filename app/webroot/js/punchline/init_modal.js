@@ -21,7 +21,7 @@
                                         dialog.data.fadeIn(200);
                                         $('#shirt-carousel').jcarousel({
                                             scroll : 1,
-                                            start : $this.data("id")
+                                            start : $this.data("index")
                                         });
                                     });
                                 });

@@ -8,12 +8,12 @@
             echo $this->Html->meta('icon');
 
             echo $this->Html->css('reset');
-            echo $this->Html->css('default');
             echo $this->Html->css('carousel');
+            echo $this->Html->css('default');
 	?>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.js"></script>
+	<!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.js"></script-->
 	<?php
-            //echo $this->Html->script('lib/jquery.min');
+            echo $this->Html->script('lib/jquery.min');
             echo $this->Html->script('lib/jquery.plugins');
 	?>
 
@@ -79,10 +79,6 @@
                 </div>
             </div>
             <div id="content">
-				<div id="titles">
-					<img src="img/site/titles/title_teeshirts_24.png" alt="Tee Shirts" class="subtitle" />
-					<img src="img/site/titles/title_boutique_24.png" alt="Boutique" class="title" />
-				</div>
 				<?php echo $content_for_layout; ?>
             </div>
             <div id="footer">

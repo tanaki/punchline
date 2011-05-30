@@ -94,19 +94,24 @@
         height: 100%;
     }
     #menu .current {
-        position: absolute;
+		position: absolute;
         cursor: default;
         outline: none;
+		top: 0;
     }
     #menu .menu-1,
     #menu .menu-2,
     #menu .menu-3 {
         position: absolute;
+		-webkit-transition-duration : 200ms;
+		-webkit-transition-property : "top";
     }
     #menu .menu-1:hover,
     #menu .menu-2:hover,
     #menu .menu-3:hover {
-        top: 89%;
+		-webkit-transition-duration : 200ms;
+		-webkit-transition-property : "top";
+		top: 89%;
     }
 
     /* repeated for javascript use */
@@ -179,11 +184,11 @@
         position: absolute;
         top: 50%;
 
-        height: 3px;
+        height: 9px;
         width: 0;
         overflow:hidden;
 
-        background: url(../img/site/misc/bg_content_24.png) repeat-x left top;
+        background: url(../img/site/misc/bg_content_24.png) repeat-x left 5px;
     }
     .main-content.ready {
         margin-top: -158px;
@@ -204,7 +209,7 @@
             position: absolute;
             top: 50%;
 
-            height: 3px;
+            height: 9px;
             width: 0;
             overflow:hidden;
 
@@ -293,13 +298,24 @@
         #simplemodal-container .grey {
             color : #3c3c3c;
         }
+		
+		#simplemodal-container .title-shirt {
+			color:#fff;
+			display:block;
+			margin-bottom:15px;
+			
+			font-weight:bold;
+		}
+		#simplemodal-container .title-shirt span {
+			color:#3d3d3d;
+		}
 
         #simplemodal-container .price,
         #simplemodal-container .color,
         #simplemodal-container .reference,
         #simplemodal-container .size {
             display: block;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             font-size: 12px;
         }
         #simplemodal-container .size .white {
@@ -321,6 +337,9 @@
             height: 16px;
             margin-right: 3px;
             border: 1px #7f7b7b solid;
+			
+			overflow:hidden;
+			text-indent:-5000px;
         }
 
         #simplemodal-container .btn-buy {
@@ -354,7 +373,7 @@
             z-index: 20;
         }
         #simplemodal-container .jcarousel-next {
-            right: 20px;
+            right: 15px;
             background-position: right top;
         }
         #simplemodal-container .jcarousel-prev-disabled,
@@ -373,7 +392,7 @@
             height: 540px;
             z-index: 10;
 
-            background: #9D9D9D;
+            background: none;
         }
         .pagin-caption span {
             display: block;

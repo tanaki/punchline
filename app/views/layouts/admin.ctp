@@ -3,8 +3,7 @@
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php __('CakePHP: the rapid development php framework:'); ?>
-		<?php echo $title_for_layout; ?>
+		Admin Punchline - <?php echo $title_for_layout; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -18,7 +17,7 @@
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><img alt="Punchline Logo" src="../img/site/misc/logo_punchline_24.png" /></h1>
+			<h1><a href="/admin/shirts"><img alt="Punchline Logo" src="/img/site/misc/logo_punchline_24.png" /></a></h1>
 		</div>
 		<div id="content">
 

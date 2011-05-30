@@ -33,11 +33,14 @@ function openComplete() {
 
 function closeStarted(){
     isOpen = false;
+	$("#shirts-carousel").fadeOut();
 }
 function closeComplete(){
-    $.ajax({
+	
+	$.ajax({
         url : openPage,
         success : function(html){
+			
             $('#content').html(html);
             openPage = openPage.replace("/", "#");
             // **********************************************************
